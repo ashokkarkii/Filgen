@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Navbar with Toggle Sidebar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen">
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between px-4 py-2 bg-white shadow border-b w-full">
+      <div class="flex items-center gap-3">
+        <button class="text-gray-700 focus:outline-none" id="hamburger">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+        <span class="text-xl font-semibold">File Gen</span>
+      </div>
+
+
+
+      <!-- Right: Icons -->
+      <div class="flex items-center gap-4">
+        <div class="flex-1 mx-4 max-w-md">
+          <input
+            type="text"
+            placeholder="Search anything here"
+            class="w-full px-3 py-1 rounded-md bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+
+        <!-- Notification Icon -->
+        <button class="text-gray-700 hover:text-blue-500 relative">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="25"
+              height="25"
+              viewBox="0 0 50 50"
+            >
+              <path
+                d="M 25 0 C 22.792969 0 21 1.792969 21 4 C 21 6.207031 22.792969 8 25 8 C 27.207031 8 29 6.207031 29 4 C 29 1.792969 27.207031 0 25 0 Z M 19.375 6.09375 C 14.804688 8.050781 12 12.457031 12 18 C 12 29 8.199219 31.761719 5.9375 33.40625 C 4.933594 34.132813 4 34.808594 4 36 C 4 40.207031 10.28125 42 25 42 C 39.71875 42 46 40.207031 46 36 C 46 34.808594 45.066406 34.132813 44.0625 33.40625 C 41.800781 31.761719 38 29 38 18 C 38 12.441406 35.199219 8.046875 30.625 6.09375 C 29.769531 8.367188 27.566406 10 25 10 C 22.433594 10 20.230469 8.363281 19.375 6.09375 Z M 19 43.875 C 19 43.914063 19 43.960938 19 44 C 19 47.308594 21.691406 50 25 50 C 28.308594 50 31 47.308594 31 44 C 31 43.960938 31 43.914063 31 43.875 C 29.117188 43.953125 27.117188 44 25 44 C 22.882813 44 20.882813 43.953125 19 43.875 Z"
+              ></path></svg
+          ></a>
+        </button>
+
+        <!-- Settings Icon -->
+        <button class="text-gray-700 hover:text-blue-500">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="25"
+              height="25"
+              viewBox="0 0 50 50"
+            >
+              <path
+                d="M47.16,21.221l-5.91-0.966c-0.346-1.186-0.819-2.326-1.411-3.405l3.45-4.917c0.279-0.397,0.231-0.938-0.112-1.282 l-3.889-3.887c-0.347-0.346-0.893-0.391-1.291-0.104l-4.843,3.481c-1.089-0.602-2.239-1.08-3.432-1.427l-1.031-5.886 C28.607,2.35,28.192,2,27.706,2h-5.5c-0.49,0-0.908,0.355-0.987,0.839l-0.956,5.854c-1.2,0.345-2.352,0.818-3.437,1.412l-4.83-3.45 c-0.399-0.285-0.942-0.239-1.289,0.106L6.82,10.648c-0.343,0.343-0.391,0.883-0.112,1.28l3.399,4.863 c-0.605,1.095-1.087,2.254-1.438,3.46l-5.831,0.971c-0.482,0.08-0.836,0.498-0.836,0.986v5.5c0,0.485,0.348,0.9,0.825,0.985 l5.831,1.034c0.349,1.203,0.831,2.362,1.438,3.46l-3.441,4.813c-0.284,0.397-0.239,0.942,0.106,1.289l3.888,3.891 c0.343,0.343,0.884,0.391,1.281,0.112l4.87-3.411c1.093,0.601,2.248,1.078,3.445,1.424l0.976,5.861C21.3,47.647,21.717,48,22.206,48 h5.5c0.485,0,0.9-0.348,0.984-0.825l1.045-5.89c1.199-0.353,2.348-0.833,3.43-1.435l4.905,3.441 c0.398,0.281,0.938,0.232,1.282-0.111l3.888-3.891c0.346-0.347,0.391-0.894,0.104-1.292l-3.498-4.857 c0.593-1.08,1.064-2.222,1.407-3.408l5.918-1.039c0.479-0.084,0.827-0.5,0.827-0.985v-5.5C47.999,21.718,47.644,21.3,47.16,21.221z M25,32c-3.866,0-7-3.134-7-7c0-3.866,3.134-7,7-7s7,3.134,7,7C32,28.866,28.866,32,25,32z"
+              ></path></svg
+          ></a>
+        </button>
+
+        <!-- Profile Image -->
+        <a href="#"
+          ><img
+            src="https://i.pravatar.cc/40"
+            alt="User Avatar"
+            class="w-8 h-8 rounded-full object-cover border-2 border-gray-300"
+        /></a>
+      </div>
+
+
+
+
+
+
+
+
+    </nav>
+
+    <!-- Layout -->
+    <div class="flex">
+      <!-- Sidebar -->
+      <aside
+        id="sidebar"
+        class="w-64 bg-white shadow h-screen p-4 hidden"
+      >
+        <ul class="space-y-4">
+          <li class="font-bold text-lg">Dashboard</li>
+          <li>New Folder</li>
+          <li>Starred</li>
+          <li>Folders List</li>
+          <li>Friends</li>
+          <li>Sharefolders</li>
+          <li>Statistics</li>
+          <li class="text-red-500 mt-8">Logout</li>
+        </ul>
+      </aside>
+
+      <!-- Main content -->
+      <main class="flex-1 p-6">
+        <!-- Main Content -->
+      <div class="flex-1">
+        <!-- Navbar -->
+       
+
+        <!-- Upload Section -->
+        <div class="max-w-3xl mx-auto mt-8 bg-white shadow-md rounded p-6">
+          <h2 class="text-2xl font-bold mb-4">Media Upload</h2>
+
+          <!-- Drag and Drop -->
+          <div id="drop-zone" class="border-2 border-dashed border-blue-400 p-6 text-center rounded-md bg-blue-50">
+            <input id="fileInput" type="file" multiple class="hidden" accept=".jpg,.png,.svg,.zip" />
+            <p class="mb-2">Drag your file(s) or <button onclick="document.getElementById('fileInput').click()" class="text-blue-600 font-semibold underline">browse</button></p>
+            <p class="text-sm text-gray-500">Max 10 MB per file. Only .jpg, .png, .svg, .zip allowed. Up to 5 files.</p>
+            <ul id="fileList" class="mt-4 text-left text-sm text-gray-700"></ul>
+          </div>
+
+          <!-- Upload from URL -->
+          <div class="mt-6">
+            <label class="block font-medium mb-2">Upload from URL</label>
+            <div class="flex gap-2">
+              <input type="url" id="fileUrl" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Add file URL..." />
+              <button onclick="uploadFromUrl()" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Upload</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const sidebar = document.getElementById('sidebar');
+
+      hamburger.addEventListener('click', () => {
+        sidebar.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>

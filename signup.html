@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up | File Gen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="output.css">
+  <script src="javasc.js"></script>
+</head>
+<body class="bg-white min-h-screen flex items-center justify-center">
+  <div class="max-w-6xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-6 py-1">
+
+    <!-- Left: Image -->
+    <div class="flex items-center justify-center">
+      <img src="signup.png" alt="Sign up illustration" class="max-w-full w-72 md:w-96" />
+    </div>
+
+    <!-- Right: Form -->
+    <div class="flex flex-col justify-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-2">Sign up</h2>
+      <p class="text-sm text-gray-500 mb-6">Let’s get you all set up so you can access your personal account.</p>
+
+      <form onsubmit="return handleSignUp(event)" class="space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <input type="text" placeholder="First Name" name="firstName" required class="border border-gray-300 px-4 py-2 rounded w-full" />
+          <input type="text" placeholder="Last Name" name="lastName" required class="border border-gray-300 px-4 py-2 rounded w-full" />
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <input type="email" placeholder="Email" name="email" required class="border border-gray-300 px-4 py-2 rounded w-full" />
+          <input type="tel" placeholder="Phone Number" name="phone" required class="border border-gray-300 px-4 py-2 rounded w-full" />
+        </div>
+        <div class="relative">
+          <input id="password" type="password" placeholder="Password" name="password" required class="border border-gray-300 px-4 py-2 rounded w-full pr-10" />
+          <button type="button" onclick="togglePassword('password')" class="absolute right-2 top-2 text-gray-500">👁️</button>
+        </div>
+        <div class="relative">
+          <input id="confirmPassword" type="password" placeholder="Confirm Password" name="confirmPassword" required class="border border-gray-300 px-4 py-2 rounded w-full pr-10" />
+          <button type="button" onclick="togglePassword('confirmPassword')" class="absolute right-2 top-2 text-gray-500">👁️</button>
+        </div>
+
+        <div class="flex items-start gap-2 text-sm text-gray-600">
+          <input type="checkbox" class="mt-1" required />
+          <p>I agree to all the <span class="text-red-500">Terms</span> and <span class="text-red-500">Privacy Policies</span></p>
+        </div>
+
+        <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Create account</button>
+
+        <p class="text-center text-sm text-gray-600">
+          Already have an account? 
+          <a href="login.html" class="text-red-500 hover:underline">Login</a>
+        </p>
+
+        <div class="text-center my-4 text-sm text-gray-500">Or Sign up with</div>
+
+        <div class="flex justify-center gap-4">
+          <button class="w-10 h-10 border rounded flex items-center justify-center hover:bg-gray-100">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" class="w-5 h-5" alt="Facebook">
+          </button>
+          <button class="w-10 h-10 border rounded flex items-center justify-center hover:bg-gray-100">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" class="w-5 h-5" alt="Google">
+          </button>
+          <button class="w-10 h-10 border rounded flex items-center justify-center hover:bg-gray-100">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" class="w-5 h-5" alt="Apple">
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+</body>
+</html>

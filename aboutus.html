@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="javasc.js"></script>
+</head>
+<body class="font-sans text-gray-800 max-w-[1366px] mx-auto">
+    
+    <!-- Navbar -->
+    <header class="flex justify-between items-center p-3 ">
+      <h1 class="text-xl font-bold text-black">File Gen</h1>
+
+      <nav class="hidden md:flex items-center space-x-6 text-sm text-gray-700">
+        <a href="index.html" class="hover:text-blue-500 font-semibold">Home</a>
+        <a href="#" class="hover:text-blue-500 font-semibold">About Us</a>
+        <a href="#" class="hover:text-blue-500 font-semibold">Features</a>
+        <a href="contactus.html" class="hover:text-blue-500 font-semibold">Contact</a>
+        <a href="#" class="hover:text-blue-500 font-semibold">FAQs</a>
+        <button class="bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 text-sm">
+          Login
+        </button>
+      </nav> 
+    </header>
+
+
+
+    <section class="max-w-4xl mx-auto p-6">
+    <!-- Header Card -->
+    <div class="bg-[url('image.jpg')] bg-cover bg-center h-64 w-full rounded-md flex flex-col items-center justify-center">
+      <h2 class="text-3xl font-bold text-blue-900 mb-2">Learn More About Us</h2>
+      <p class="text-gray-600 mt-5">
+        Personalized coaching, proven strategies, and expert trainers to help<br/>
+        <p>you succeed on your first attempt.</p>
+      </p>
+    </div>
+
+    <!-- About Content -->
+    <div class="mt-10 space-y-6 text-center text-base text-gray-700">
+      <p>
+        At file.gen, we are a passionate team of individuals working tirelessly to build a leading file-sharing platform that empowers users to securely store, easily share, and effectively monetize their files.
+      </p>
+
+      <p>
+        Our vision is to create a seamless experience for those looking to manage their digital content in a way that is both efficient and rewarding. Whether you’re an individual looking to share personal files, a business needing secure file storage solutions, or a creator seeking to monetize your work, file.gen is designed with you in mind. As part of our platforms, we leverage cutting-edge technology to ensure your files are safe, accessible, and can be easily shared with others. Our commitment to innovation and quality drives us to continuously improve the platform, making sure we meet the ever-evolving needs of our users.
+      </p>
+
+      <p>
+        Every member of our team is united by a shared passion for making file.gen the best file-sharing solution — one that not only helps users store and share files but also offers exciting opportunities for them to turn their digital content into a source of income. We believe in the power of hard work, collaboration, and creativity, and we are determined to make dl.surf a top-tier platform that users can trust and rely on.
+      </p>
+    </div>
+  </section>
+
+
+  <section class="max-w-6xl mx-auto px-4 py-10">
+    <!-- Section Header -->
+    <div class="mb-6 flex items-center justify-between">
+      <div>
+        <span class="text-sm text-gray-500 bg-gray-300 px-3 py-1 rounded-full">Our Team</span>
+        <h2 class="text-2xl font-bold mt-2 text-blue-900">Meet Our Team</h2>
+      </div>
+      <!-- Arrows -->
+      <div class="flex space-x-2">
+        <button id="scrollLeft" class="p-2 bg-gray-200 hover:bg-gray-300 rounded-full">
+          <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button id="scrollRight" class="p-2 bg-blue-600 hover:bg-blue-700 rounded-full">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>   
+
+    <!-- Carousel -->
+    <div id="carousel" class="flex space-x-6 overflow-hidden scroll-smooth pb-4">
+      <!-- Team Member Cards -->
+      <div class="min-w-[280px] bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="https://randomuser.me/api/portraits/women/1.jpg" class="w-full h-48 object-cover" />
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold">Kelvin Musk</h3>
+          <p class="text-sm text-gray-500">CEO</p>
+        </div>
+      </div>
+
+      <div class="min-w-[280px] bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-full h-48 object-cover" />
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold">Kris M. Smith</h3>
+          <p class="text-sm text-gray-500">COO</p>
+        </div>
+      </div>
+
+      <div class="min-w-[280px] bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-full h-48 object-cover" />
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold">K. William</h3>
+          <p class="text-sm text-gray-500">Director</p>
+        </div>
+      </div>
+
+      <div class="min-w-[280px] bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="https://randomuser.me/api/portraits/men/22.jpg" class="w-full h-48 object-cover" />
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold">Doe Smith</h3>
+          <p class="text-sm text-gray-500">Manager</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+
+
+   <!-- Footer -->
+<div class="w-full  pt-10 pb-4 px-4 ">
+    <div class="max-w-6xl flex mx-auto flex-col sm:flex-col md:flex-row justify-between items-end  text-sm ">
+      <!-- Left -->
+      <div class="">
+        <p class="text-blue-900 max-w-sm">
+          A file management project is helped by clear system design,efficient storage structures, and user-friendly interfaces.incoporating features like search functionality,access control, and cloid integeration also
+          enhances performance.
+        </p>
+      </div>
+
+      <!-- Center -->
+      
+
+      <!-- Right -->
+      <div class="text-right  space-y-1 ">
+        <a href="#" class="text-blue-900 hover:underline block">About Us</a>
+        <a href="#" class="text-blue-900 hover:underline block">Contact Us</a>
+        <a href="#" class="text-blue-900 hover:underline block">Privacy Policy</a>
+        <a href="#" class="text-blue-900 hover:underline block">Terms & Conditions</a>
+      </div>
+    </div>
+</div>
+
+<hr class="h-[1px] mt-6 bg-gray-300 border-0" />
+
+
+  <footer class="text-center mt-4 mb-6">
+        <h1 class="font-semibold text-gray-800 tracking-wide">FILE.GEN</h1>
+        <p class="text-gray-600 mb-4">Copyright © 2025 file.gen</p>
+        <div class="flex justify-center space-x-4">
+          <a href="#" class="text-blue-600 hover:text-blue-800">
+            <img src="facebook.png" alt="">
+          </a>
+          <a href="#" class="text-pink-500 hover:text-pink-700">
+            <img src="instagram.png" alt="">
+          </a>
+          <a href="#" class="text-blue-700 hover:text-blue-900">
+            <img src="linkedin.png" alt="">
+          </a>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+</body>
+</html>

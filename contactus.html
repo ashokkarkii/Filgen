@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="javasc.js"></script>
+</head>
+<body class="font-sans text-gray-800 max-w-[1366px] mx-auto">
+
+    <header class="flex justify-between items-center p-3 ">
+      <h1 class="text-xl font-bold text-black">File Gen</h1>
+
+      <nav class="hidden md:flex items-center space-x-6 text-sm text-gray-700">
+        <a href="index.html" class="hover:text-blue-500 font-semibold">Home</a>
+        <a href="aboutus.html" class="hover:text-blue-500 font-semibold">About Us</a>
+        <a href="#" class="hover:text-blue-500 font-semibold">Features</a>
+        <a href="#" class="hover:text-blue-500 font-semibold">Contact</a>
+        <a href="#" class="hover:text-blue-500 font-semibold">FAQs</a>
+        <a href="login.html"><button class="bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 text-sm">
+          Login
+        </button></a>
+      </nav>
+    </header>
+
+
+    <section class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-start">
+    <!-- Left Info -->
+    <div>
+      <h2 class="text-3xl font-semibold text-blue-900 mb-4 leading-snug">We are here to help<br />you always…</h2>
+      <p class="text-gray-600 mb-8">
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, buying to many desktop publishing packages.
+      </p>
+
+      <!-- Email Info -->
+      <div class="flex items-center mb-6 space-x-4">
+        <div class="p-3 border-black border-2">
+          <svg fill="#000000" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" stroke="#000000" class="w-6 h-6">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+
+            </g><g id="SVGRepo_iconCarrier"> <path d="M0 1694.235h1920V226H0v1468.235ZM112.941 376.664V338.94H1807.06v37.723L960 
+              1111.233l-847.059-734.57ZM1807.06 526.198v950.513l-351.134-438.89-88.32 70.475 378.353 472.998H174.042l378.353-472.998-88.32-70.475-351.134
+               438.89V526.198L960 1260.768l847.059-734.57Z" fill-rule="evenodd"></path> 
+              </g>
+            </svg>
+        </div>
+        <div>
+          <p class="text-blue-700 font-medium">Drop Us :</p>
+          <p>support@file.com</p>
+        </div>
+      </div>
+
+      <!-- Phone Info -->
+      <div class="flex items-center space-x-4">
+        <div class="p-3 border-2 border-black">
+          <svg class="w-6 h-6" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ce2727">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+
+            </g><g id="SVGRepo_iconCarrier"> <path d="M5.11596 12.7268L8.15456 9.08666C8.46255 8.69067 8.61655 8.49267 8.69726 8.27061C8.76867 
+              8.07411 8.79821 7.86486 8.784 7.65628C8.76793 7.42055 8.67477 7.18766 8.48846 6.72187L7.77776 4.94513C7.50204 4.25581 7.36417 3.91116 
+              7.12635 3.68525C6.91678 3.48618 6.65417 3.3519 6.37009 3.29856C6.0477 3.23803 5.68758 3.32806 4.96733 3.50812L3 4.00002C3 14 9.99969 21
+               20 21L20.4916 19.0324C20.6717 18.3122 20.7617 17.952 20.7012 17.6297C20.6478 17.3456 20.5136 17.083 20.3145 16.8734C20.0886 16.6356 19.7439
+                16.4977 19.0546 16.222L17.4691 15.5878C16.9377 15.3752 16.672 15.2689 16.4071 15.2608C16.1729 15.2536 15.9404 15.3013 15.728 15.4002C15.4877
+                 15.512 15.2854 15.7144 14.8807 16.1191L11.7943 19.1569" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g></svg>
+        </div>
+        <div>
+          <p class="text-blue-700 font-medium">Call Us :</p>
+          <p>+977 9867888084</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Form -->
+    <form class="space-y-6 bg-white" onsubmit="return handleSubmit(event)">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label class="block text-sm font-medium text-gray-700">First Name</label>
+          <input type="text" name="firstName" required class="mt-1 block w-full border-b border-gray-400 focus:border-blue-500 focus:outline-none py-2" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Last Name</label>
+          <input type="text" name="lastName" required class="mt-1 block w-full border-b border-gray-400 focus:border-blue-500 focus:outline-none py-2" />
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Email</label>
+          <input type="email" name="email" required class="mt-1 block w-full border-b border-gray-400 focus:border-blue-500 focus:outline-none py-2" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Phone Number</label>
+          <input type="tel" name="phone" class="mt-1 block w-full border-b border-gray-400 focus:border-blue-500 focus:outline-none py-2" />
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-2">Select Subject?</label>
+        <div class="flex flex-wrap gap-4">
+          <label class="inline-flex items-center">
+            <input type="radio" name="subject" value="General Inquiry" class="text-blue-600 focus:ring-blue-500" checked />
+            <span class="ml-2 text-sm">General Inquiry</span>
+          </label>
+          <label class="inline-flex items-center">
+            <input type="radio" name="subject" value="Support" class="text-blue-600 focus:ring-blue-500" />
+            <span class="ml-2 text-sm">Support</span>
+          </label>
+          <label class="inline-flex items-center">
+            <input type="radio" name="subject" value="Feedback" class="text-blue-600 focus:ring-blue-500" />
+            <span class="ml-2 text-sm">Feedback</span>
+          </label>
+          <label class="inline-flex items-center">
+            <input type="radio" name="subject" value="Other" class="text-blue-600 focus:ring-blue-500" />
+            <span class="ml-2 text-sm">Other</span>
+          </label>
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Message</label>
+        <textarea name="message" rows="1" required class="mt-1 block w-full bg-re border-b  border-gray-400 focus:border-blue-500 focus:outline-none py-2 placeholder:text-sm" placeholder="Write your message..."></textarea>
+      </div>
+
+      <button type="submit" class="px-6 py-2 bg-blue-900 text-white font-medium rounded hover:bg-blue-800 transition-all float-end">
+        Send Message
+      </button>
+    </form>
+  </section>
+
+
+
+  <div class="w-full  pt-10 pb-4 px-4 ">
+    <div class="max-w-6xl flex mx-auto flex-col sm:flex-col md:flex-row justify-between items-end  text-sm ">
+      <!-- Left -->
+      <div class="">
+        <p class="text-blue-900 max-w-sm">
+          A file management project is helped by clear system design,efficient storage structures, and user-friendly interfaces.incoporating features like search functionality,access control, and cloid integeration also
+          enhances performance.
+        </p>
+      </div>
+
+      <!-- Center -->
+      
+
+      <!-- Right -->
+      <div class="text-right  space-y-1 ">
+        <a href="#" class="text-blue-900 hover:underline block">About Us</a>
+        <a href="#" class="text-blue-900 hover:underline block">Contact Us</a>
+        <a href="#" class="text-blue-900 hover:underline block">Privacy Policy</a>
+        <a href="#" class="text-blue-900 hover:underline block">Terms & Conditions</a>
+      </div>
+    </div>
+</div>
+
+<hr class="h-[1px] mt-6 bg-gray-300 border-0" />
+
+
+  <footer class="text-center mt-4 mb-6">
+        <h1 class="font-semibold text-gray-800 tracking-wide">FILE.GEN</h1>
+        <p class="text-gray-600 mb-4">Copyright © 2025 file.gen</p>
+        <div class="flex justify-center space-x-4">
+          <a href="#" class="text-blue-600 hover:text-blue-800">
+            <img src="facebook.png" alt="">
+          </a>
+          <a href="#" class="text-pink-500 hover:text-pink-700">
+            <img src="instagram.png" alt="">
+          </a>
+          <a href="#" class="text-blue-700 hover:text-blue-900">
+            <img src="linkedin.png" alt="">
+          </a>
+        </div>
+    </footer>
+
+
+
+
+    
+</body>
+</html>
